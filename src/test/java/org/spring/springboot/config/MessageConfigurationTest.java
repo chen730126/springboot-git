@@ -19,6 +19,7 @@ public class MessageConfigurationTest {
 
     @Test
     public void testScanPackages() throws Exception {
+    	 assertEquals("message configuration", "start");
         AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
         ctx.scan("org.spring.springboot");
         ctx.refresh();
